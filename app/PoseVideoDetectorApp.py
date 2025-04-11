@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from services.PoseDetector import PoseDetectionService
+from services.PoseDetector2 import PoseDetectionService2
 
 
 class PoseVideoDetectorApp:
@@ -24,7 +24,7 @@ class PoseVideoDetectorApp:
         self.output_skeleton = output_skeleton
         self.output_width = output_width
         self.output_height = output_height
-        self.pose_service = PoseDetectionService()
+        self.pose_service = PoseDetectionService2()
 
         self.cap = cv2.VideoCapture(self.input_source)
 
