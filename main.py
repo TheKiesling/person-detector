@@ -17,11 +17,10 @@ def main():
     elif sys.argv[1] == "pose_video" and len(sys.argv) > 2:
         app = PoseVideoDetectorApp(
             input_source=sys.argv[2],
-            output_with_pose='output/pose.mp4',
-            output_skeleton_only='output/skeleton.mp4',
-            fps=30,
-            frame_width=None,
-            frame_height=None
+            output_pose='output/pose.mp4',
+            output_skeleton='output/skeleton.mp4',
+            output_width=750,
+            output_height=650
         )
     
     app.run()
